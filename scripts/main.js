@@ -56,12 +56,12 @@ myButton.onclick = function() {
   
   // 个性化欢迎信息设置函数
   function setUserName() {
-    let myName = prompt('请输入你的名字。');
+    let myName = prompt('please input your name');
     if (!myName || myName === null) {
       setUserName();
     } else {
       localStorage.setItem('name', myName);
-      myHeading.textContent = 'Mozilla 酷毙了，' + myName;
+      myHeading.textContent = 'Welcome!' + myName;
     }
   }
   
@@ -70,7 +70,7 @@ myButton.onclick = function() {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla 酷毙了，' + storedName;
+    myHeading.textContent = 'Welcome!' + storedName;
   }
   
   // 为按钮设置 onclick 事件处理器：
