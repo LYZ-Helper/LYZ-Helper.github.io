@@ -2,10 +2,10 @@
 let myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello World!"
 */
-/*document.querySelector('h1').onclick = function() {
-    alert("不许动");
+document.querySelector('h1').onclick = function() {
+    alert("congratulations, this is an Easter Eggs!");
 }
-*/
+
 
 
 let myImage = document.querySelector("img");
